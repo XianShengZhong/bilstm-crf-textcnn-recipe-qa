@@ -47,17 +47,17 @@ python build_cookgraph.py
 ```
 
 ######  5.开火烹饪！ (启动系统)
-	控制台版本:  
+控制台版本:  
 
-		```bash
-		python chatbot_graph.py  
-		```
+```bash
+python chatbot_graph.py  
+```
 
-	Web版本 (更美味):  
+Web版本 (更美味):  
 
-		```bash
-		python chatbot_api.py  
-		```
+```bash
+python chatbot_api.py  
+```
 
 ## 🧑‍🍳 项目结构
 #### 厨房大厨的秘方箱 📦
