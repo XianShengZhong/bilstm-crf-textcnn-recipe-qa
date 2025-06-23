@@ -7,38 +7,42 @@
 
 ## 🌟 项目简介
 #### 这是一个基于知识图谱的智能菜谱问答系统，它能：
-回答各种烹饪相关问题（"红烧肉怎么做？"）
-推荐特色菜品（"推荐个川菜"）
-识别菜品特征（"清淡的菜有哪些？"）
+回答各种烹饪相关问题（"红烧肉怎么做？"）  
+推荐特色菜品（"推荐个川菜"）  
+识别菜品特征（"清淡的菜有哪些？"）  
 简单来说，就是你的24小时在线米其林大厨！👨‍🍳
 
 ## 🚀 快速开始
 #### 先决条件
-Python 3.6+
-Neo4j 数据库 (别担心，安装就像煮方便面一样简单)
-一颗热爱烹饪的心 ❤️
+Python 3.6+  
+Neo4j 数据库 (别担心，安装就像煮方便面一样简单)  
+一颗热爱烹饪的心 ❤️  
 
 ## 🍳 烹饪数据大餐 (运行流程)
 #### 按照这个顺序来，就像跟着菜谱做菜一样简单：
 ######  1.准备食材 (数据处理)
 ```bash
 python data/processed_cookbook.py
+
 ######  2.切配食材 (生成训练数据)
 ```bash
 python data/BILSTM_CRF_train_data_generate.py
 python data/TEXTCNN_train_data_generate.py
+
 ######  3.训练大厨 (模型训练)
 ```bash
 python models/Bilstm_Crf_Predictor.py
 python models/TextCnn_Predictor.py
+
 ######  4.构建知识图谱 (把菜谱装进大脑)
 ```bash
 python build_cookgraph.py
+
 ######  5.开火烹饪！ (启动系统)
-	控制台版本:
-		python chatbot_graph.py
-	Web版本 (更美味):
-		python chatbot_api.py
+	控制台版本:  
+		python chatbot_graph.py  
+	Web版本 (更美味):  
+		python chatbot_api.py  
 		
 
 ## 🧑‍🍳 项目结构
