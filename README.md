@@ -1,5 +1,5 @@
 
-#A Recipe QA System with BiLSTM-CRF and TextCNN(基于 BiLSTM-CRF 和 TextCNN 的菜谱问答系统)
+# A Recipe QA System with BiLSTM-CRF and TextCNN(基于 BiLSTM-CRF 和 TextCNN 的菜谱问答系统)
 
 ## 🍳 布大厨智能菜谱问答系统 - 你的AI厨房小助手
 "不会做菜？让我来帮你！从今天起，你就是厨房里的超级英雄！" 
@@ -21,22 +21,30 @@ Neo4j 数据库 (别担心，安装就像煮方便面一样简单)
 ## 🍳 烹饪数据大餐 (运行流程)
 #### 按照这个顺序来，就像跟着菜谱做菜一样简单：
 ######  1.准备食材 (数据处理)
+
 ```bash
 python data/processed_cookbook.py
+```
 
 ######  2.切配食材 (生成训练数据)
+
 ```bash
 python data/BILSTM_CRF_train_data_generate.py
 python data/TEXTCNN_train_data_generate.py
+```
 
 ######  3.训练大厨 (模型训练)
+
 ```bash
 python models/Bilstm_Crf_Predictor.py
 python models/TextCnn_Predictor.py
+```
 
 ######  4.构建知识图谱 (把菜谱装进大脑)
+
 ```bash
 python build_cookgraph.py
+```
 
 ######  5.开火烹饪！ (启动系统)
 	控制台版本:  
