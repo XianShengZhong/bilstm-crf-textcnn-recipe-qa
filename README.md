@@ -36,8 +36,8 @@ python data/TEXTCNN_train_data_generate.py
 ######  3.训练大厨 (模型训练)
 
 ```bash
-python models/Bilstm_Crf_Predictor.py
-python models/TextCnn_Predictor.py
+python models/bilstm_crf.py
+python models/textcnn.py
 ```
 
 ######  4.构建知识图谱 (把菜谱装进大脑)
